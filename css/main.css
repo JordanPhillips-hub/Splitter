@@ -1,0 +1,63 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {margin: 50px 0 41px;}
+
+.calc-container {
+  background-color: var(--clr-white);
+  padding: 32px;
+  max-width: 920px;
+  border-radius: var(--br-25);
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+}
+
+.input-container {position: relative;}
+
+.input-icon {
+  color: var(--clr-input-icon);
+  position: absolute;
+  top: 46px;
+  left: 19.3px;
+}
+
+.input-container.select-tip h2 {margin-bottom: 16px;}
+
+.btn-percent,
+.btn-custom {
+  font-size: 1.5rem;
+  width: 146.63px;
+  padding: 0.42em;
+  margin-bottom: 16px;
+}
+
+.select-tip button:nth-child(even) {margin-right: 7px;}
+
+.output-container {
+  background-color: var(--clr-dark-green);
+  max-width: 413px;
+  padding: 37px 24px 24px;
+  border-radius: 15px;
+}
+
+.total-output {margin: 20px 0 32px 0}
+
+.total-output,
+.amount-output {
+  display: flex;
+  justify-content: space-between;
+}
+
+.output-number {
+  font-size: 2rem;
+  letter-spacing: -0.666667px
+}
+
+.btn-reset {
+  background-color: var(--clr-strong-cyan);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0.45em 0;
+}

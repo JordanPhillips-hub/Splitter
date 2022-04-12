@@ -1,0 +1,90 @@
+:root {
+  --clr-body-bg: #C5E4E7;
+  --clr-dark-green: #00474B;
+  --clr-input-icon: #9EBBBD;
+  --clr-btn-custom: #547878;
+  --clr-small: #7f9d9f;
+  --clr-strong-cyan: #26C2AE;
+  --clr-very-light-greyish-cyan: #F3F9FA;
+  --clr-dark-grayish-cyan: #5e7a7d;
+  --clr-white: #fff;
+
+ 
+
+  /* BORDER RADIUS */
+  --br-5: 5px;
+  --br-15: 15px;
+  --br-25: 25px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--clr-strong-cyan);
+  background-color: var(--clr-body-bg);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  /* font-size: 1rem; */
+}
+
+header {text-align: center;}
+
+h2 {
+  color: var(--clr-dark-grayish-cyan);
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+h3 {
+  font-size: 1rem;
+  color: var(--clr-white);
+}
+
+small {color: var(--clr-small);}
+
+input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  text-align: right;
+  margin-bottom: 32px;
+  padding: 0.25em 0.73em 0.25em 0;
+  background-color: var(--clr-very-light-greyish-cyan);
+  color: var(--clr-dark-green);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+
+input[type="number"] {-moz-appearance: textfield;}
+
+input,
+button {font-family: "Space Mono", monospace;}
+
+button {
+  transition: ease-in 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.rounded {border-radius: var(--br-5);}
+
+.bg-dark {background-color: var(--clr-dark-green);}
+
+.btn-percent {color: var(--clr-white);}
+
+.bg-light {
+  background-color: var(--clr-strong-cyan);
+  color: var(--clr-dark-green);
+}
+
+.btn-custom {
+  background-color: var(--clr-very-light-greyish-cyan);
+  color: var(--clr-btn-custom);
+}
