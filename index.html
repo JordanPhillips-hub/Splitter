@@ -6,16 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Tip Calculator</title>
+
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
   <!-- EXTERNAL STYLES -->
   <link rel="stylesheet" href="./css/default.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- EXTERNAL SCRIPT -->
+  <script defer src="main.js"></script>
 </head>
 
 <body>
-
   <main>
     <header>
       <img src="./images/logo.svg" alt="splitter">
@@ -26,7 +30,7 @@
       <section class="key-in container">
         <div class="input-container bill">
           <h2>Bill</h2>
-          <input class="rounded" type="number" name="bill" id="billInput">
+          <input id="billInput" class="rounded" type="number" name="bill">
           <img class="input-icon" src="./images/icon-dollar.svg" alt="dollar sign">
         </div>
 
@@ -34,15 +38,19 @@
           <h2>Select Tip %</h2>
           <button class="btn-percent bg-dark rounded">5%</button>
           <button class="btn-percent bg-dark rounded">10%</button>
-          <button class="btn-percent bg-light rounded">15%</button>
+          <button class="active btn-percent bg-dark rounded">15%</button>
           <button class="btn-percent bg-dark rounded">25%</button>
           <button class="btn-percent bg-dark rounded">50%</button>
-          <button class="btn-custom rounded">Custom</button>
+          <input id="custom" class="input-custom rounded" type="number" name="custom" placeholder="Custom"></input>
         </div>
 
         <div class="input-container num-people rounded">
-          <h2>Number of people</h2>
-          <input class="rounded" type="number" name="num-people" id="numPeople">
+          <div class="num-people-err">
+            <h2>Number of people</h2>
+            <span class="err-msg">Can't be zero</span>
+          </div>
+      
+          <input id="numPeople" class="rounded" type="number" name="numPeople">
           <img class="input-icon" src="./images/icon-person.svg" alt="person icon">
         </div>
       </section>
@@ -54,7 +62,7 @@
             <small>/ person</small>
           </div>
 
-          <div class="output-number">$4.27</div>
+          <div class="output-number"></div>
         </div>
 
         <div class="total-output">
@@ -63,11 +71,11 @@
             <small>/ person</small>
           </div>
 
-          <div class="output-number">$32.79</div>
+          <div class="output-number"></div>
         </div>
 
         <div>
-          <button class="btn-reset rounded">Reset</button>
+          <button class="active btn-reset rounded">Reset</button>
         </div>
       </section>
     </div>

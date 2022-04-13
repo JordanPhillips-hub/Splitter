@@ -1,0 +1,27 @@
+@media screen and (min-width: 950px) {
+
+  header {margin-bottom: 88px;}
+
+  .calc-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .key-in {width: 66%;}
+
+  .output-container {
+    flex-shrink: 2;
+    padding: 40px;
+    width: 70%;
+  }
+
+  .total-output {margin: 41px 0 133px;}
+
+  .btn-reset:hover,
+  .btn-custom:hover,
+  .btn-percent:hover {
+    background-color: var(--clr-hover);
+    color: var(--clr-dark-green);
+  }
+}

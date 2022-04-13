@@ -1,14 +1,23 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 main {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  max-width: 1400px;
 }
 
-header {margin: 50px 0 41px;}
+header {margin-bottom: 41px;}
 
 .calc-container {
+  display: flex;
+  flex-direction: column;
   background-color: var(--clr-white);
   padding: 32px;
-  max-width: 920px;
+  max-width: 984px;
   border-radius: var(--br-25);
   box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
 }
@@ -25,7 +34,7 @@ header {margin: 50px 0 41px;}
 .input-container.select-tip h2 {margin-bottom: 16px;}
 
 .btn-percent,
-.btn-custom {
+.input-custom {
   font-size: 1.5rem;
   width: 146.63px;
   padding: 0.42em;
@@ -34,11 +43,34 @@ header {margin: 50px 0 41px;}
 
 .select-tip button:nth-child(even) {margin-right: 7px;}
 
+.input-custom::placeholder {text-align: center;}
+
+.num-people-err {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.err-msg {
+  color: var(--clr-err);
+  opacity: 0;
+}
+
+.err-outline {
+  outline: none;
+  border: 2px solid var(--clr-err);
+}
+
+.show-err {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
 .output-container {
   background-color: var(--clr-dark-green);
-  max-width: 413px;
+  width: 100%;
   padding: 37px 24px 24px;
-  border-radius: 15px;
+  border-radius: var(--br-15);
 }
 
 .total-output {margin: 20px 0 32px 0}
@@ -60,4 +92,9 @@ header {margin: 50px 0 41px;}
   text-transform: uppercase;
   width: 100%;
   padding: 0.45em 0;
+}
+
+.active {
+  background-color: var(--clr-strong-cyan);
+  color: var(--clr-dark-green);
 }

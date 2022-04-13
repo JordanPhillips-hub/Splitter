@@ -8,8 +8,8 @@
   --clr-very-light-greyish-cyan: #F3F9FA;
   --clr-dark-grayish-cyan: #5e7a7d;
   --clr-white: #fff;
-
- 
+  --clr-hover: #9FE8DF;
+  --clr-err: #E17457;
 
   /* BORDER RADIUS */
   --br-5: 5px;
@@ -30,7 +30,6 @@ body {
   background-color: var(--clr-body-bg);
   font-family: "Space Mono", monospace;
   font-weight: 700;
-  /* font-size: 1rem; */
 }
 
 header {text-align: center;}
@@ -59,6 +58,12 @@ input {
   color: var(--clr-dark-green);
 }
 
+button:focus, 
+input:focus {
+  outline: none;
+  border: 3px solid var(--clr-hover);
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {-webkit-appearance: none;}
 
@@ -68,7 +73,7 @@ input,
 button {font-family: "Space Mono", monospace;}
 
 button {
-  transition: ease-in 0.3s;
+  transition: ease-in 0.2s;
   cursor: pointer;
   border: none;
 }
@@ -82,9 +87,4 @@ button {
 .bg-light {
   background-color: var(--clr-strong-cyan);
   color: var(--clr-dark-green);
-}
-
-.btn-custom {
-  background-color: var(--clr-very-light-greyish-cyan);
-  color: var(--clr-btn-custom);
 }
