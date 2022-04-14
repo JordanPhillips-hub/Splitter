@@ -18,7 +18,7 @@ function validateInt(s) {
 }
 
 let billValue = 0.0; // Default Value
-let tipValue = 0.0; // Default Value -> 15% button is active
+let tipValue = 0.0; // Default Value
 let peopleValue = 1; // Default Value
 
 bill.addEventListener('input', setBillValue);
