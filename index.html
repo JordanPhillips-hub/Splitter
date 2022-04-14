@@ -22,15 +22,16 @@
 <body>
   <main>
     <header>
-      <img src="./images/logo.svg" alt="splitter">
+      <h1>
+        <img src="./images/logo.svg" alt="splitter">
+      </h1>
     </header>
 
     <div class="calc-container">
-
       <section class="key-in">
         <div class="input-container bill">
           <h2>Bill</h2>
-          <input id="billInput" class="rounded" type="number" name="bill">
+          <input id="billInput" class="rounded" type="text" name="bill" placeholder="0">
           <img class="input-icon" src="./images/icon-dollar.svg" alt="dollar sign">
         </div>
 
@@ -38,10 +39,10 @@
           <h2>Select Tip %</h2>
           <button class="btn-percent bg-dark rounded">5%</button>
           <button class="btn-percent bg-dark rounded">10%</button>
-          <button class="active btn-percent bg-dark rounded">15%</button>
+          <button class="btn-percent bg-dark rounded">15%</button>
           <button class="btn-percent bg-dark rounded">25%</button>
           <button class="btn-percent bg-dark rounded">50%</button>
-          <input id="custom" class="input-custom rounded" type="number" name="custom" placeholder="Custom"></input>
+          <input id="custom" class="input-custom rounded" type="text" name="custom" placeholder="Custom"></input>
         </div>
 
         <div class="input-container num-people rounded">
@@ -49,8 +50,8 @@
             <h2>Number of people</h2>
             <span class="err-msg">Can't be zero</span>
           </div>
-      
-          <input id="numPeople" class="rounded" type="number" name="numPeople">
+
+          <input id="numPeople" class="rounded" type="text" name="numPeople" placeholder="0">
           <img class="input-icon" src="./images/icon-person.svg" alt="person icon">
         </div>
       </section>
@@ -62,7 +63,7 @@
             <small>/ person</small>
           </div>
 
-          <div class="output-number"></div>
+          <div class="output-number">0.00</div>
         </div>
 
         <div class="total-output">
@@ -71,11 +72,11 @@
             <small>/ person</small>
           </div>
 
-          <div class="output-number"></div>
+          <div class="output-number">0.00</div>
         </div>
 
         <div>
-          <button class="active btn-reset rounded">Reset</button>
+          <button class="btn-reset rounded">Reset</button>
         </div>
       </section>
     </div>

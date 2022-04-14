@@ -7,8 +7,18 @@ const errMsg = document.querySelector('.err-msg');
 const output = document.querySelectorAll('.output-number');
 const buttonReset = document.querySelector('.btn-reset');
 
+function validateFloat(s) {
+  var regexp = /^[0-9]*\.?[0-9]*$/;
+  return s.match(regexp);
+}
+
+function validateInt(s) {
+  var regexp = /^[0-9]*$/;
+  return s.match(regexp);
+}
+
 let billValue = 0.0; // Default Value
-let tipValue = 0.15; // Default Value -> 15% button is active
+let tipValue = 0.0; // Default Value -> 15% button is active
 let peopleValue = 1; // Default Value
 
 bill.addEventListener('input', setBillValue);
@@ -22,8 +32,16 @@ numPeople.addEventListener('input', setPeopleValue);
 buttonReset.addEventListener('click', reset);
 
 function setBillValue() {
-  billValue = parseFloat(bill.value);
+  if (bill.value.includes(',')) {
+    bill.value = bill.value.replace(',', '.');
+  }
 
+  // Cut out invalid characters 
+  if (!validateFloat(bill.value)) {
+    bill.value = bill.value.substring(0, bill.value.length - 1);
+  }
+
+  billValue = parseFloat(bill.value);
   calcTip();
 }
 
@@ -35,7 +53,7 @@ function handleClick() {
     // Set active state
     if (event.target.innerHTML == btn.innerHTML) {
       btn.classList.add('active');
-      tipValue = parseFloat(btn.innerHTML)/100;
+      tipValue = parseFloat(btn.innerHTML) / 100;
 
       calcTip();
     }
@@ -46,7 +64,11 @@ function handleClick() {
 }
 
 function setTipCustomValue() {
-  tipValue = parseFloat(tipCustom.value/100);
+  if (!validateInt(tipCustom.value)) {
+    tipCustom.value = tipCustom.value.substring(0, tipCustom.value.length - 1);
+  }
+
+  tipValue = parseFloat(tipCustom.value / 100);
 
   // Remove active state from buttons
   tipButtons.forEach(btn => {
@@ -59,6 +81,10 @@ function setTipCustomValue() {
 }
 
 function setPeopleValue() {
+  if (!validateInt(numPeople.value)) {
+    numPeople.value = numPeople.value.substring(0, numPeople.value.length - 1);
+  }
+
   peopleValue = parseFloat(numPeople.value);
   if (peopleValue <= 0) {
     errMsg.classList.add('show-err');
@@ -66,7 +92,6 @@ function setPeopleValue() {
   } else {
     errMsg.classList.remove('show-err');
     numPeople.classList.remove('err-outline');
- 
   }
 
   calcTip();
@@ -82,11 +107,11 @@ function calcTip() {
 }
 
 function reset() {
-  bill.value = '0.0';
+  bill.value = '';
   setBillValue();
 
-  tipButtons[2].click();
-
-  numPeople.value = '1';
+  numPeople.value = '';
   setPeopleValue();
+
+  location.reload();
 }
