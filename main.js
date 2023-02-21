@@ -7,15 +7,8 @@ const errMsg = document.querySelector('.err-msg');
 const output = document.querySelectorAll('.output-number');
 const buttonReset = document.querySelector('.btn-reset');
 
-function validateFloat(s) {
-  var regexp = /^[0-9]*\.?[0-9]*$/;
-  return s.match(regexp);
-}
-
-function validateInt(s) {
-  var regexp = /^[0-9]*$/;
-  return s.match(regexp);
-}
+const validateFloat = (s) => /^[0-9]*\.?[0-9]*$/.test(s);
+const validateInt = (s) => /^[0-9]*$/.test(s);
 
 let billValue = 0.0; // Default Value
 let tipValue = 0.0; // Default Value
