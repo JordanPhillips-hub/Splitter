@@ -38,13 +38,13 @@ function setBillValue() {
   calcTip();
 }
 
-function handleClick() {
+function handleClick(e) {
   tipButtons.forEach(btn => {
     // Clear active state
     btn.classList.remove('active');
 
     // Set active state
-    if (event.target.innerHTML == btn.innerHTML) {
+    if (e.target.innerHTML == btn.innerHTML) {
       btn.classList.add('active');
       tipValue = parseFloat(btn.innerHTML) / 100;
 
