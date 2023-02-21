@@ -30,3 +30,10 @@
     color: var(--clr-dark-green);
   }
 }
+
+@media screen and (min-width: 600px) {
+  .btn-percent,
+  .input-custom {
+    width: 146.63px;
+  }
+}

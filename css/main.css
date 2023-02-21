@@ -1,4 +1,5 @@
 body {
+  padding: 16px;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -43,7 +44,7 @@ header {
 .btn-percent,
 .input-custom {
   font-size: 1.5rem;
-  width: 146.63px;
+  width: 100%;
   padding: 0.42em;
   margin-bottom: 16px;
 }
