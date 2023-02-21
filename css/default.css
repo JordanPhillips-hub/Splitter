@@ -69,11 +69,6 @@ input:focus {
   border: 3px solid var(--clr-hover);
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 input[type="number"] {
   -moz-appearance: textfield;
 }
