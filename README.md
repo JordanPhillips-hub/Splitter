@@ -25,11 +25,6 @@ This app was built using the following technologies:
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Built With
-- HTML
-- CSS
-- JavaScript
-
 ## Links
 - Live Site URL: [https://jordanphillips-hub.github.io/Splitter/]
 
