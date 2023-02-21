@@ -11,9 +11,11 @@ main {
   max-width: 1400px;
 }
 
-header {margin: 50px 0 41px;}
+header {
+  margin: 50px 0 41px;
+}
 
-.calc-container {
+.calculator {
   display: flex;
   flex-direction: column;
   background-color: var(--clr-white);
@@ -23,7 +25,9 @@ header {margin: 50px 0 41px;}
   box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
 }
 
-.input-container {position: relative;}
+.input-container {
+  position: relative;
+}
 
 .input-icon {
   color: var(--clr-input-icon);
@@ -32,7 +36,9 @@ header {margin: 50px 0 41px;}
   left: 19.3px;
 }
 
-.input-container.select-tip h2 {margin-bottom: 16px;}
+.input-container.select-tip h2 {
+  margin-bottom: 16px;
+}
 
 .btn-percent,
 .input-custom {
@@ -42,9 +48,13 @@ header {margin: 50px 0 41px;}
   margin-bottom: 16px;
 }
 
-.select-tip button:nth-child(even) {margin-right: 7px;}
+.select-tip button:nth-child(even) {
+  margin-right: 7px;
+}
 
-.input-custom::placeholder {text-align: center;}
+.input-custom::placeholder {
+  text-align: center;
+}
 
 .num-people-err {
   display: flex;
@@ -74,7 +84,9 @@ header {margin: 50px 0 41px;}
   border-radius: var(--br-15);
 }
 
-.total-output {margin: 20px 0 32px 0}
+.total-output {
+  margin: 20px 0 32px 0;
+}
 
 .total-output,
 .amount-output {
@@ -84,7 +96,7 @@ header {margin: 50px 0 41px;}
 
 .output-number {
   font-size: 2rem;
-  letter-spacing: -0.666667px
+  letter-spacing: -0.666667px;
 }
 
 .btn-reset {
