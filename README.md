@@ -1,32 +1,26 @@
 # Splitter
-
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
-## Table of contents
+## Screenshot
+![](./images/splitter-screenshot.png)
 
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-  - [Author](#author)
+## Usage
+1. Enter the total bill amount in the "Bill" field.
+2. Select the tip percentage.
+3. Enter the number of people who will be splitting the bill in the "Number of people" field.
+The Tip Calculator will auto calculate and display the total bill amount, including the tip, and the amount each person should pay.
 
-### The challenge
+## Features
+- The Tip Calculator allows you to choose from a range of tip percentages, including 10%, 15%, 20%, 25% and a custom amount option.
+- You can split the bill evenly among any number of people.
 
-Users should be able to:
+## License
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person
 
-### Screenshot
+## Links
+- Live Site URL: [https://jordanphillips-hub.github.io/Splitter/]
 
-![](./images/screenshot.png)
-
-### Links
-
-- Live Site URL: [https://jordanphillips-hub.github.io/tip-calculator/]
-
-### Built with
+## Built With
 
 - HTML
 - CSS
