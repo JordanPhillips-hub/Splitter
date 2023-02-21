@@ -31,7 +31,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 - LinkedIn - [https://www.linkedin.com/in/jordan-phillips-/]
 - Frontend Mentor - [https://www.frontendmentor.io/profile/JordanPhillips-hub]
-
-
-
-
