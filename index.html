@@ -20,21 +20,27 @@
 </head>
 
 <body>
+  <!-- Main content container -->
   <main>
+    <!-- Header section -->
     <header>
       <h1>
         <img src="./images/logo.svg" alt="splitter">
       </h1>
     </header>
 
+    <!-- Calculator section -->
     <div class="calculator">
+      <!-- Input section -->
       <section class="key-in">
+        <!-- Bill input -->
         <div class="input-container bill">
           <h2>Bill</h2>
           <input id="billInput" class="rounded" type="text" name="bill" placeholder="0">
           <img class="input-icon" src="./images/icon-dollar.svg" alt="dollar sign">
         </div>
 
+        <!-- Tip input -->
         <div class="input-container select-tip">
           <h2>Select Tip %</h2>
           <button class="btn-percent bg-dark rounded">5%</button>
@@ -45,6 +51,7 @@
           <input id="custom" class="input-custom rounded" type="text" name="custom" placeholder="Custom"></input>
         </div>
 
+        <!-- Number of people input -->
         <div class="input-container num-people rounded">
           <div class="num-people-err">
             <h2>Number of people</h2>
@@ -56,7 +63,9 @@
         </div>
       </section>
 
+      <!-- Output section -->
       <section class="output-container">
+        <!-- Tip amount output -->
         <div class="amount-output">
           <div>
             <h3>Tip Amount</h3>
@@ -66,6 +75,7 @@
           <div class="output-number">0.00</div>
         </div>
 
+        <!-- Total amount output -->
         <div class="total-output">
           <div>
             <h3>Total</h3>
@@ -75,6 +85,7 @@
           <div class="output-number">0.00</div>
         </div>
 
+        <!-- Reset button -->
         <div>
           <button class="btn-reset rounded">Reset</button>
         </div>
