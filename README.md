@@ -1,5 +1,4 @@
 # Splitter
-This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
 Welcome to Splitter! This is a simple and intuitive tool that allows you to calculate the total cost of a bill, including tips, and split the bill evenly among any number of people. It is built using JavaScript, CSS, and HTML.
 
@@ -22,12 +21,8 @@ This app was built using the following technologies:
 -   CSS
 -   HTML
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Links
 - Live Site URL: [https://jordanphillips-hub.github.io/Splitter/]
 
 ## Author
 - LinkedIn - [https://www.linkedin.com/in/jordan-phillips-/]
-- Frontend Mentor - [https://www.frontendmentor.io/profile/JordanPhillips-hub]
